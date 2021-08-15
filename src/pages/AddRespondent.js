@@ -31,6 +31,7 @@ export default function AddRespondent () {
         setNewRespondent({...respondent, [e.target.id]: e.target.value})
     }
 
+    // Proponuje wyciagnac kod axios do osobnego komponentu - mieszanie kodu HTML i kodu dostepu do ackend w jednym pliku nie jest zalecane
     return (
         <div className="mainBody"> 
             <form onSubmit={(e) => submitHandler(e)}>
